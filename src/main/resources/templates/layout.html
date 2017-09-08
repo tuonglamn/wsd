@@ -41,7 +41,15 @@
 			            <li><a href="/product#franchise">Nhượng quyền</a></li>
 			          </ul>
 			        </li>
-			        <li><a href="/#grid">Mạng lưới</a></li>
+			        <li class="dropdown">
+			          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Mạng lưới
+			            <span class="caret"></span>
+			          </a>
+			          <ul class="dropdown-menu">
+			            <li><a href="/grid#wsTanAn">Washspeed Tân An</a></li>
+			            <li><a href="/grid#wsBenTre">Washspeed Bến Tre</a></li>
+			          </ul>
+			        </li>
 			        <li class="dropdown">
 			          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Tin tức
 			            <span class="caret"></span>
@@ -51,7 +59,7 @@
 			            <li><a href="/#">Nội bộ</a></li>
 			          </ul>
 			        </li>
-			        <li><a href="/#contact">Liên hệ</a></li>
+			        <li><a href="/contact">Liên hệ</a></li>
 			      </ul>
 			    </div>
 		    </div>
@@ -272,6 +280,19 @@
 				</div>
 			</div>
 		</div>
+		
+		<div th:fragment="site-contact" class="bg-2" id="contact">
+			<div class="container">
+			    <br/>
+			    <div id="googleMap" class="grayscale" style="width:100%;height:420px;"></div>
+			    <br/>
+			    <p>Quý khách có thể đến sử dụng dịch vụ của chúng tôi tại:</p>
+			    <p><b>- Wash Speed - Coopmart Tân An: 01 Mai Thị Tốt, Phường 2, Tp. Tân An, Long An </b></p>
+			    <p><b>- Wash Speed - Trung tâm thương mại Sense City Bến Tre: 6A Trần Quốc Tuấn, P.4, Tp. Bến Tre, Tỉnh Bến Tre </b></p>
+			    <p>Các bạn cũng có thể liên hệ với chúng tôi qua <a href="mailto:washspeeds@gmail.com">washspeeds@gmail.com</a> hoặc Điện thoại: 
+			    	<a href="tel:0933379838"></a>0933 379 838 / <a href="tel:01239038939">01239 038 939</a></p>
+  			</div>
+  		</div>
 
 		<footer th:fragment="site-footer" class="text-center">
 			<a class="up-arrow" href="#top" data-toggle="tooltip" title="Đầu trang">
