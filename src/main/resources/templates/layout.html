@@ -36,7 +36,7 @@
 			          <ul class="dropdown-menu">
 			            <li><a href="/#product">Các dịch vụ nổi bật</a></li>
 			            <li><a href="/product#wash-helmet">Giặt nón</a></li>
-			            <li><a href="/product#fix-helmet">Sửa nón</a></li>
+			            <li><a href="/product#fix-helmet">Sửa chữa</a></li>
 			            <li><a href="/product#ads-helmet">Quảng cáo</a></li>
 			            <li><a href="/product#franchise">Nhượng quyền</a></li>
 			          </ul>
@@ -46,8 +46,8 @@
 			            <span class="caret"></span>
 			          </a>
 			          <ul class="dropdown-menu">
-			            <li><a href="/contruct">Washspeed Tân An</a></li>
-			            <li><a href="/contruct">Washspeed Bến Tre</a></li>
+			            <li><a href="/grid#wsTanAn">Washspeed Tân An</a></li>
+			            <li><a href="/grid#wsBenTre">Washspeed Bến Tre</a></li>
 			          </ul>
 			        </li>
 			        <li class="dropdown">
@@ -281,6 +281,49 @@
 			</div>
 		</div>
 		
+		<div th:fragment="grid-detail" class="bg-2">
+			<div class="container">
+			    <div id="wsTanAn" class="row text-center">
+				  <div class="col-sm-6">
+				  	<div class="thumbnail">
+						<img src="../static/img/wsTanAn" th:src="@{/img/wsTanAn.jpg}" alt="Washspeed Tân An"/>
+					</div>
+				  </div>
+				  <div class="col-sm-6">
+				    <div class="thumbnail">
+				    	<h3><strong>WashSpeed Tân An</strong></h3>
+			    		<p><strong>01 Mai Thị Tốt, Phường 2, Tp. Tân An, Long An</strong></p>
+			    		<p>Công nghệ và kỹ thuật do chúng tôi sáng chế lần đầu tiên xuất hiện 
+			    		tại Việt Nam và đưa vào hoạt động "cửa hàng giặt nón bảo hiểm" đầu tiên 
+			    		tại Long An vào ngày 28/12/2016.</p>
+			    		<p>Với công nghệ GIẶT SẤY LẤY LIỀN, nón sẽ được giặt và làm khô trong vòng 
+			    		10-15 phút. Quý khách không phải lo lắng vì mất thời gian phơi nón cả ngày 
+			    		mới khô như thường lệ, nhất là khi thời tiết xấu.</p>
+			    		<p>Các bạn hãy đến Coopmart Tân An để trải nghiệm nhé.</p>
+				    </div>
+				  </div>
+				</div>
+				<div id="wsBenTre" class="row text-center">
+				  <div class="col-sm-6">
+				  	<div class="thumbnail">
+						<img src="../static/img/wsBenTre" th:src="@{/img/wsBenTre.jpg}" alt="Washspeed Bến tre"/>
+					</div>
+				  </div>
+				  <div class="col-sm-6">
+				    <div class="thumbnail">
+				    	<h3><strong>WashSpeed Bến Tre</strong></h3>
+			    		<p><strong>6A Trần Quốc Tuấn, P.4, Tp. Bến Tre, Tỉnh Bến Tre</strong></p>
+			    		<p>Tưng bừng khai trương cửa hàng giặt nón bảo hiểm WashSpeed 25/07/2017.
+			    		Với công nghệ giặt sấy lấy liền và khử mùi bằng tia cực tím, Washspeed đảm
+			    		bảo nón bảo hiểm sẽ được loại bỏ vi khuẩn và mùi hôi khó chịu. Đặc biệt, nón
+			    		sẽ được làm khô nhanh chóng trong vòng 15 phút.</p>
+			    		<p>Cả nhà hãy đến Sense City Bến Tre để trải nghiệm dịch vụ mới này nhé.</p>
+				    </div>
+				  </div>
+				</div>
+			</div>
+		</div>
+		
 		<div th:fragment="site-contact" class="bg-2" id="contact">
 			<div class="container">
 			    <br/>
@@ -307,7 +350,7 @@
 			<a class="up-arrow" href="#top" data-toggle="tooltip" title="Đầu trang">
 		    <span class="glyphicon glyphicon-chevron-up"></span>
 		  	</a><br/><br/>
-		  	<p> &copy; Copyright 2017, Design &amp; Coding by <a href="https://www.facebook.com/" title="https://www.facebook.com/tuonglamn" target="_blank">Turquoise Nguyen</a></p>
+		  	<p> &copy; Copyright 2017, Design &amp; Coding by <a href="https://www.facebook.com/TurquoiseNguyen" title="https://www.facebook.com/TurquoiseNguyen" target="_blank">Turquoise Nguyen</a></p>
 		</footer>
 	</body>
 
