@@ -27,20 +27,31 @@
 			    </div>
 			    <div class="collapse navbar-collapse" id="myNavbar">
 			      <ul class="nav navbar-nav navbar-right">
-			        <li><a href="#home">Trang Chủ</a></li>
-			        <li><a href="#about">Giới thiệu</a></li>
-			        <li><a href="#product">Dịch vụ</a></li>
-			        <li><a href="#grid">Mạng lưới</a></li>
+			        <li><a href="/#home">Trang Chủ</a></li>
+			        <li><a href="/#about">Giới thiệu</a></li>
+			        <li class="dropdown">
+			          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Dịch vụ
+			            <span class="caret"></span>
+			          </a>
+			          <ul class="dropdown-menu">
+			            <li><a href="/#product">Các dịch vụ nổi bật</a></li>
+			            <li><a href="/product#wash-helmet">Giặt nón</a></li>
+			            <li><a href="/product#fix-helmet">Sửa nón</a></li>
+			            <li><a href="/product#ads-helmet">Quảng cáo</a></li>
+			            <li><a href="/product#franchise">Nhượng quyền</a></li>
+			          </ul>
+			        </li>
+			        <li><a href="/#grid">Mạng lưới</a></li>
 			        <li class="dropdown">
 			          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Tin tức
 			            <span class="caret"></span>
 			          </a>
 			          <ul class="dropdown-menu">
-			            <li><a href="#">Tin mới</a></li>
-			            <li><a href="#">Nội bộ</a></li>
+			            <li><a href="/#">Tin mới</a></li>
+			            <li><a href="/#">Nội bộ</a></li>
 			          </ul>
 			        </li>
-			        <li><a href="#contact">Liên hệ</a></li>
+			        <li><a href="/#contact">Liên hệ</a></li>
 			      </ul>
 			    </div>
 		    </div>
@@ -137,7 +148,7 @@
       					<p>Nhanh chóng sữa chữa</p>
       					<p>Nhanh chóng phục vụ</p>
       				</div>
-    			</div>
+    			</div>s
   			</div>
 		</div>
 		
@@ -150,36 +161,120 @@
 				    <div class="thumbnail">
 				      <img src="../static/img/wash-helmet.png" th:src="@{/img/wash-helmet.png}" alt="Giặt nón"/>
 				      <p><strong>Giặt nón</strong></p>
-				      <button class="btn">Chi tiết</button>
+				      <a href="/product#wash-helmet" class="btn">Chi tiết</a>
 				    </div>
 				  </div>
 				  <div class="col-sm-3">
 				    <div class="thumbnail">
 				      <img src="../static/img/fix-helmet.png" th:src="@{/img/fix-helmet.png}" alt="Sửa nón"/>
 				      <p><strong>Sửa chữa</strong></p>
-				      <button class="btn">Chi tiết</button>
+				      <a href="/product#fix-helmet" class="btn">Chi tiết</a>
 				    </div>
 				  </div>
 				  <div class="col-sm-3">
 				    <div class="thumbnail">
 				      <img src="../static/img/ads-helmet.png" th:src="@{/img/ads-helmet.png}" alt="Quảng cáo"/>
 				      <p><strong>Quảng cáo</strong></p>
-				      <button class="btn">Chi tiết</button>
+				      <a href="/product#ads-helmet" class="btn">Chi tiết</a>
 				    </div>
 				  </div>
 				  <div class="col-sm-3">
 				    <div class="thumbnail">
 				      <img src="../static/img/franchise.png" th:src="@{/img/franchise.png}" alt="Nhượng quyền"/>
 				      <p><strong>Nhượng quyền</strong></p>
-				      <button class="btn">Chi tiết</button>
+				      <a href="/product#franchise" class="btn">Chi tiết</a>
 				    </div>
 				  </div>
 				</div>
 			</div>
 		</div>
 		
+		<div th:fragment="product-detail" class="bg-2">
+			<div class="container">
+			    <h2 class="text-center"><strong>DỊCH VỤ</strong></h2>    
+			    <div id="wash-helmet" class="row text-center">
+				  <div class="col-sm-4">
+				  	<div class="thumbnail">
+				  		<h3><strong>GIẶT NÓN:</strong></h3>
+						<img src="../static/img/wash-helmet.png" th:src="@{/img/wash-helmet.png}" alt="Giặt nón"/>
+					</div>
+				  </div>
+				  <div class="col-sm-8">
+				    <div class="thumbnail">
+			    		<p><strong>Giải pháp vệ sinh, diệt khuẩn của chúng tôi là:</strong></p>
+			    		<p>- Công nghệ <strong>GIẶT SẤY LẤY LIỀN</strong> (nhanh chóng và tiện lợi): 
+			    		nón bảo hiểm của Quý khách sẽ được giặt riêng và làm khô 
+			    		trong vòng 10 phút. Bạn không cần phải lo lắng mất thời 
+			    		gian giặt nón bằng tay và phơi khô bằng nắng mất nhiều 
+			    		thời gian, đặc biệt là khi thời tiết xấu.</p>
+			    		<p>- Cùng với sấy khô, công nghệ <strong> KHỬ TRÙNG BẰNG TIA CỰC TÍM (UV)</strong>: 
+			    		đảm bảo nón bảo hiểm sẽ được loại bỏ vi khuẩn cũng như mùi hôi khó 
+			    		chịu bằng tia cực tím. Quý khách sẽ không còn lo ngại vi khuẩn cư 
+			    		trú trên nón bảo hiểm gây ra chứng ngứa da đầu và rụng tóc.</p>
+			    		<p>- Giá dịch vụ giặt nón bảo hiểm phù hợp, từ <strong> 15.000 đồng đến 30.000 
+			    		đồng/nón/lần giặt.</strong></p>
+				    </div>
+				  </div>
+				</div>
+				<div id="fix-helmet" class="row text-center">
+				  <div class="col-sm-8">
+						<h3><strong>SỬA CHỮA:</strong></h3>
+			    		<p><strong>Chúng tôi cung cấp các dịch vụ sữa chữa sau:</strong></p>
+			    		<p>- Thay kính (tùy theo loại từ 10.000 đồng - 20.000 đồng)</p>
+			    		<p>- Thay chốt khóa (tùy theo loại từ 10.000 đồng - 20.000 đồng)</p>
+			    		<p>- Thay dây đeo (tùy theo loại từ 10.000 đồng - 20.000 đồng)</p>
+			    		<p>- Thay miếng lót nón (tùy theo loại từ 10.000 đồng - 20.000 đồng)</p>
+				  </div>
+				  <div class="col-sm-4">
+				    <div class="thumbnail">
+				    	<img src="../static/img/fix-helmet.png" th:src="@{/img/fix-helmet.png}" alt="Sửa nón"/>
+				    </div>
+				  </div>
+				</div>
+				<div id="ads-helmet" class="row text-center">
+				  <div class="col-sm-4">
+				  	<div class="thumbnail">
+						<h3><strong>QUẢNG CÁO:</strong></h3>
+						<img src="../static/img/ads-helmet.png" th:src="@{/img/ads-helmet.png}" alt="Quảng cáo"/>
+					</div>
+				  </div>
+				  <div class="col-sm-8">
+				    <div class="thumbnail">
+			    		<p><strong>Nhận thiết kế và in lo-go của doanh nghiệp lên nón bảo hiểm 
+			    		theo yêu cầu, giá cạnh tranh:</strong></p>
+			    		<p>- Là công cụ hữu hiệu để giới thiệu sản phẩm, thương hiệu công ty.</p>
+			    		<p>- Là món quà tri ân ý nghĩa.</p>
+			    		<p>- Là trang bị đồng phục cho nhân viên.</p>
+			    		<p>- Chúng tôi cam kết có sản phẩm chất lượng, mẫu mã đẹp và sự phục vụ tốt nhất.</p>
+				    </div>
+				  </div>
+				</div>
+				<div id="franchise" class="row text-center">
+				  <div class="col-sm-8">
+						<h3><strong>NHƯỢNG QUYỀN:</strong></h3>
+			    		<p><strong>Gói dịch vụ nhượng quyền:</strong></p>
+			    		<p>- Tư vấn, thiết kế, xây dựng cửa hàng (ki-ốt) 
+			    		theo mặt bằng của đối tác, diện tích chuẩn 6m2 (3m x 2m).</p>
+			    		<p>- Cung cấp máy móc, thiết bị, phầm mềm quản lý bán hàng, 
+			    		đồng phục nhân viên,… cho đối tác nhượng quyền.</p>
+			    		<p>- Hỗ trợ đào tạo, huấn luyện nghiệp vụ cho nhân viên 
+			    		vận hành tốt quy trình giặt nón bảo hiểm.</p>
+			    		<p>- Bảo trì, bảo hành,… thường xuyên và định kỳ đảm bảo 
+			    		máy móc, thiết bị hoạt động hiệu quả.</p>
+			    		<p>- Chi tiết về nội dung nhượng quyền, xin Quý Khách vui lòng 
+			    		liên hệ với chúng tôi để được tư vấn trực tiếp. Hotline: <a href="tel:0933 379 838">0933 379 838</a></p>
+				  </div>
+				  <div class="col-sm-4">
+				    <div class="thumbnail">
+				    	<img src="../static/img/franchise.png" th:src="@{/img/franchise.png}" alt="Nhượng quyền"/>
+				    </div>
+				  </div>
+				</div>
+			</div>
+		</div>
+
 		<footer th:fragment="site-footer" class="text-center">
-			<a class="up-arrow" href="#home" data-toggle="tooltip" title="Đầu trang">
+			<a class="up-arrow" href="#top" data-toggle="tooltip" title="Đầu trang">
 		    <span class="glyphicon glyphicon-chevron-up"></span>
 		  	</a><br/><br/>
 		  	<p> &copy; Copyright 2017, Design &amp; Coding by <a href="https://www.facebook.com/" title="https://www.facebook.com/tuonglamn" target="_blank">Turquoise Nguyen</a></p>
